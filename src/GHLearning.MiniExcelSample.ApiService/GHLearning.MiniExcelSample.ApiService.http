@@ -1,0 +1,6 @@
+@GHLearning.MiniExcelSample.ApiService_HostAddress = http://localhost:5000
+
+GET {{GHLearning.MiniExcelSample.ApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
