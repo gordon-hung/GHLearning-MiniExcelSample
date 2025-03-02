@@ -2,8 +2,8 @@
 
 public record UserInfo(
 	string Username,
-	string First ,
-	string Last ,
+	string First,
+	string Last,
 	string Email,
 	DateTimeOffset Birthday,
 	DateTimeOffset Registered);

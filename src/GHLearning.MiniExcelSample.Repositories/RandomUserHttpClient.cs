@@ -25,7 +25,7 @@ internal class RandomUserHttpClient(
 		var sw = Stopwatch.StartNew();
 
 		var httpResponseMessage = await client.GetAsync(
-			uriBuilder.ToString(),
+			uriBuilder.Path + uriBuilder.Query,
 			cancellationToken)
 		.ConfigureAwait(false);
 

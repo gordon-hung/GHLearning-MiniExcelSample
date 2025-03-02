@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHLearning.MiniExcelSample.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHLearning.MiniExcelSample.Repositories", "src\GHLearning.MiniExcelSample.Repositories\GHLearning.MiniExcelSample.Repositories.csproj", "{BCEB1A66-3BD0-44AB-9F31-59A083F01629}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7E6DAC24-3E8E-407D-A2A8-8D6340B920FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHLearning.MiniExcelSample.RepositoriesTests", "test\GHLearning.MiniExcelSample.RepositoriesTests\GHLearning.MiniExcelSample.RepositoriesTests.csproj", "{2F91C43B-ECB2-4075-9A9F-E6672E95F413}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 		{BCEB1A66-3BD0-44AB-9F31-59A083F01629}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCEB1A66-3BD0-44AB-9F31-59A083F01629}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCEB1A66-3BD0-44AB-9F31-59A083F01629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F91C43B-ECB2-4075-9A9F-E6672E95F413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F91C43B-ECB2-4075-9A9F-E6672E95F413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F91C43B-ECB2-4075-9A9F-E6672E95F413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F91C43B-ECB2-4075-9A9F-E6672E95F413}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +45,7 @@ Global
 		{DC977269-5C47-CA9B-9ECA-81068C09C9F1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A6EB4FC9-FCDB-4DC2-8FD0-88D756025CB0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{BCEB1A66-3BD0-44AB-9F31-59A083F01629} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2F91C43B-ECB2-4075-9A9F-E6672E95F413} = {7E6DAC24-3E8E-407D-A2A8-8D6340B920FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFE8E682-477A-4A16-842B-2CF3D29688F4}

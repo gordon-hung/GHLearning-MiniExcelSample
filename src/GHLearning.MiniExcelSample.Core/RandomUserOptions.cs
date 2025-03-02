@@ -4,4 +4,3 @@ public record RandomUserOptions
 {
 	public Uri BaseUri { get; set; } = default!;
 }
-
