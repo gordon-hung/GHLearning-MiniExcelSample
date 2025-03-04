@@ -14,7 +14,7 @@ internal class RandomUserRequestHandler(
 			.ToArrayAsync(
 			cancellationToken: cancellationToken)
 			.ConfigureAwait(false);
-		var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "RandomUserTemplates.xlsx");
+
 		var data = new
 		{
 			UserInfos = userInfos.Select(userInfo => new
@@ -28,8 +28,10 @@ internal class RandomUserRequestHandler(
 			})
 		};
 
+		var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "RandomUserTemplates.xlsx");
+
 		using var stream = new MemoryStream();
-		stream.SaveAsByTemplate(path, data);
+		stream.SaveAsByTemplate(templatePath: path, value: data);
 		return stream.ToArray();
 	}
 }

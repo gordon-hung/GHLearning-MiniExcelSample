@@ -103,9 +103,9 @@ public class RandomUserHttpClientTest
 
 		_ = fakeHttpClientFactory.CreateClient(name: Arg.Any<string>()).Returns(fakeHttpClient);
 
-		var client = new RandomUserHttpClient(fakeLog, fakeTimeProvider, fakeHttpClientFactory);
+		var sut = new RandomUserHttpClient(fakeLog, fakeTimeProvider, fakeHttpClientFactory);
 
-		var actual = await client.RandomUserQueryAsync(results)
+		var actual = await sut.RandomUserQueryAsync(results)
 			.ToArrayAsync();
 
 		Assert.Equal("sadbird789", actual.ElementAt(0).Username);
